@@ -14,16 +14,23 @@ Algorithm:
 Program:
 
 ```
-int stack[100],top,i;
-void display()
-{
-    for(int i=top;i>=0;i--){
-        printf("%d->",stack[i]);
+#define SIZE 10
+
+char stack[SIZE];
+int top=-1;
+
+void display(){
+    if(top==-1){
+        printf("stack is empty");
+    }else{
+        for(int i=top;i>=0;i--){
+        printf("%c\n",stack[i]);}
     }
 }
 ```
 
 Output:
+<img width="1240" height="480" alt="image" src="https://github.com/user-attachments/assets/8a4d3bd8-26fa-4b7d-8c8d-64188686a9bc" />
 
 
 
@@ -99,6 +106,7 @@ void display()
 
 Output:
 
+<img width="1195" height="471" alt="image" src="https://github.com/user-attachments/assets/67136ae7-d02d-44f4-be10-77706da0e3f5" />
 
 
 
