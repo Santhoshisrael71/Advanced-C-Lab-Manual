@@ -13,11 +13,19 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int stack[100],top,i;
+void display()
+{
+    for(int i=top;i>=0;i--){
+        printf("%d->",stack[i]);
+    }
+}
+```
 
 Output:
 
-//paste your output here
+
 
 
 
@@ -36,11 +44,23 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int size=3,top=-1,stack[100];
+void push (int data)
+{
+    if(top==size-1){
+        printf("stack is full\n");
+    }else{
+        top++;
+        stack[top]=data;
+    }
+}
+```
 
 Output:
 
-//paste your output here
+<img width="1256" height="477" alt="image" src="https://github.com/user-attachments/assets/1d3896b9-c241-4072-9909-f75ce147dfa4" />
+
 
 
 
@@ -62,11 +82,24 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int front,rear;
+char queue[100];
+void display()
+{
+    if (front == -1 || front > rear) {
+        printf("No elements to display");
+    }else{
+        for(int i =front; i<=rear;i++){
+            printf("%c\n",queue[i]);
+        }
+    }
+}
+```
 
 Output:
 
-//paste your output here
+
 
 
 Result:
@@ -86,11 +119,28 @@ Algorithm:
 
 Program:
 
-//type your code here
+```
+int rear=-1,front=-1,size=3;
+float queue[50];
+void enqueue(float data) {
+    if (rear == size - 1) {
+        return; 
+    }
+
+    if (front == -1) {
+        front = 0;  
+    }
+
+    rear++;
+    queue[rear] = data;
+}
+
+```
 
 Output:
 
-//paste your output here
+<img width="1260" height="431" alt="image" src="https://github.com/user-attachments/assets/358d3e68-e347-46c6-badf-e118ed2f45bb" />
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -121,11 +171,27 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 Program:
 
-//type your code here
+```
+int front, rear;
+float queue[50];
+void dequeue()
+{
+    if(front==-1||front>rear)
+    {
+        printf("Queue Underflow.\n");
+        return;
+    }
+    else
+    {
+        front++;
+    }
+}
+```
 
 Output:
 
-//paste your output here
+<img width="1253" height="594" alt="image" src="https://github.com/user-attachments/assets/7c380f13-f07a-4c41-b732-5c1ea9a33c81" />
+
 
 
 Result:
